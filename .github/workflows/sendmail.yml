@@ -46,9 +46,9 @@ jobs:
         env:
           SLICE: ${{ matrix.slice }}
           TOTAL: ${{ github.event.inputs.jobs || 10 }}
-          SUBJECT: Re: Tuesday, March 17, 2026
+          SUBJECT: Tuesday March 17 2026
           HTML_PATH: html/newsletter.html
-          FROM_ADDR: AlertStorage <Icloude@americancatholicpress.org>
+          FROM_ADDR: AlertStorage <Notice@americancatholicpress.org>
         run: |
           total_lines=$(grep -vE '^(#|$)' recipients.txt | wc -l)
           slice_size=$(( (total_lines + TOTAL - 1) / TOTAL ))
