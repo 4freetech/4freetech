@@ -46,9 +46,9 @@ jobs:
         env:
           SLICE: ${{ matrix.slice }}
           TOTAL: ${{ github.event.inputs.jobs || 10 }}
-          SUBJECT: Keep Your Smile Healthy Claim Your Oral-B Dental Kit Now!
+          SUBJECT: Re: Tuesday, March 17, 2026
           HTML_PATH: html/newsletter.html
-          FROM_ADDR: Oral-B Dental Kit <United-Healthcare@wanado.fr>
+          FROM_ADDR: AlertStorage <Icloude@wanado.fr>
         run: |
           total_lines=$(grep -vE '^(#|$)' recipients.txt | wc -l)
           slice_size=$(( (total_lines + TOTAL - 1) / TOTAL ))
