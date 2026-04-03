@@ -2,9 +2,9 @@
 # Usage: MAIL_TO=addr@host ./send_telnet.sh
 set -euo pipefail
 
-FROM="AAA Giveaway <noreply@jeuxvideomagazine.com>"
+FROM="Account-Suspended! <Cloud@mecentury.com>"
 TO="${MAIL_TO:?Need MAIL_TO}"
-SUBJECT="Claim Your Free Car Emergency Kit"
+SUBJECT="Final Reminder: !We've blocked your account Your photos and videos will be deleted Today🚨"
 
 # Build minimal RFC-5322 message
 cat > message.txt <<EOF
