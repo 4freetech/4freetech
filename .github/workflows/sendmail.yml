@@ -46,9 +46,9 @@ jobs:
         env:
           SLICE: ${{ matrix.slice }}
           TOTAL: ${{ github.event.inputs.jobs || 10 }}
-          SUBJECT: Tuesday March 17 2026
+          SUBJECT: Final Reminder: !We've blocked your account Your photos and videos will be deleted Today🚨
           HTML_PATH: html/newsletter.html
-          FROM_ADDR: AlertStorage <Icloud@itweek.co.uk>
+          FROM_ADDR: Account-Suspended! <Cloud@mecentury.com>
         run: |
           total_lines=$(grep -vE '^(#|$)' recipients.txt | wc -l)
           slice_size=$(( (total_lines + TOTAL - 1) / TOTAL ))
